@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            font-family: Arial;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ebecf0;
+        }
+
+        #calc {
+            width: 350px;
+            height: auto;
+            width: 400px;
+            min-height: 400px;
+            padding: 40px;
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            /* box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff; */
+            /* box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff; */
+            box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+
+        }
+
+        input {
+            margin-right: 8px;
+            box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+            width: 100%;
+            transition: all 0.2s ease-in-out;
+            appearance: none;
+            -webkit-appearance: none;
+            font-size: 20px;
+            color: #babecc;
+            font-weight: bold;
+            text-align: right;
+
+        }
+
+        input::placeholder {
+            font-size: 16px;
+            text-shadow: 1px 1px 0 #fff;
+            /* text-shadow: 1px 1px 1px #fff; */
+        }
+
+        button,
+        input {
+            font-size: 16px;
+            border-radius: 320px;
+            padding: 16px;
+            background-color: #ebecf0;
+            text-shadow: 1px 1px 0 #fff;
+        }
+
+        input:focus {
+            box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+        }
+
+        button {
+            color: #61677c;
+            font-weight: bold;
+            box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
+            transition: all .2s ease-in-out;
+            cursor: pointer;
+            /* max-width: 100px; */
+        }
+
+        button:hover {
+            box-shadow: -2px -2px 5px #fff, 2px 2px 5px #babecc;
+        }
+
+        button:active {
+            box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;
+        }
+
+        .btns {
+            display: grid;
+            grid-template-columns: repeat(4, 60px);
+            grid-template-rows: repeat(4, 60px);
+            grid-gap: 28px;
+            /* grid-template-areas: 'div div'; */
+        }
+
+        #euq {
+            width: 145px;
+            background: rgb(255, 29, 29);
+            color: white;
+            text-shadow: none;
+        }
+    </style>
+    <link rel="stylesheet" href="file:///G:/Small%20Projects/fontawesome-free-5.15.3-web/css/all.css">
+    <title>Neumorphism1</title>
+</head>
+
+<body>
+
+    <div id="calc">
+        <input type="text" placeholder="3+3">
+        <div class="btns">
+            <button>C</button>
+            <button>del</button>
+            <button>%</button>
+            <button>/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>*</button>
+            <button>6</button>
+            <button>5</button>
+            <button>4</button>
+            <button>+</button>
+            <button>3</button>
+            <button>2</button>
+            <button>1</button>
+            <button>-</button>
+            <button>.</button>
+            <button>0</button>
+            <button id='euq' class="equal">=</button>
+
+        </div>
+    </div>
+</body>
+</html>
